@@ -1,0 +1,33 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x993bd50 .scope module, "tff" "tff" 2 1;
+ .timescale 0 0;
+v0x993bdd0_0 .net "clk", 0 0, C4<z>; 0 drivers
+v0x995bdb0_0 .var "q", 0 0;
+v0x995be10_0 .net "reset", 0 0, C4<z>; 0 drivers
+v0x995be70_0 .net "t", 0 0, C4<z>; 0 drivers
+E_0x995f738 .event posedge, v0x993bdd0_0;
+    .scope S_0x993bd50;
+T_0 ;
+    %wait E_0x995f738;
+    %load/v 8, v0x995be10_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %set/v v0x995bdb0_0, 0, 1;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/v 8, v0x995bdb0_0, 1;
+    %load/v 9, v0x995be70_0, 1;
+    %xor 8, 9, 1;
+    %set/v v0x995bdb0_0, 8, 1;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "tff.v";

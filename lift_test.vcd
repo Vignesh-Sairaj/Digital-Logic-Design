@@ -1,0 +1,93 @@
+$date
+	Thu Oct 29 05:58:26 2015
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module lift_tb $end
+$var wire 1 ! grn $end
+$var wire 1 " red $end
+$var reg 1 # clk $end
+$var reg 1 $ cmd $end
+$var reg 1 % reset $end
+$scope module lift0 $end
+$var wire 1 & clk $end
+$var wire 1 ' cmd $end
+$var wire 1 ! grn $end
+$var wire 1 " red $end
+$var wire 1 ( reset $end
+$var wire 1 ) state $end
+$scope module dff0 $end
+$var wire 1 & clk $end
+$var wire 1 ' d $end
+$var wire 1 ( reset $end
+$var reg 1 * q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x*
+x)
+1(
+0'
+0&
+1%
+0$
+0#
+x"
+x!
+$end
+#1
+0%
+0(
+#2
+1"
+0*
+0)
+0!
+1#
+1&
+#4
+0#
+0&
+#6
+0"
+1*
+1)
+1!
+1#
+1&
+1$
+1'
+#8
+0#
+0&
+#10
+1#
+1&
+#12
+0#
+0&
+0$
+0'
+#14
+1"
+0*
+0)
+0!
+1#
+1&
+#16
+0#
+0&
+#18
+1#
+1&
+#20
+0#
+0&
